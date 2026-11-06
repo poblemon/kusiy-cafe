@@ -1,0 +1,301 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Kusiy Café &amp; Snacks · Café peruano de especialidad en Jesús María</title>
+<meta name="description" content="Café peruano de especialidad (85+ SCA) y snacks artesanales sin octógonos. Enchufes en cada mesa, Wi-Fi de 1 Gbps y tu pedido en menos de 3 minutos.">
+<meta name="theme-color" content="#2B1810">
+<link rel="icon" href="logo.svg" type="image/svg+xml">
+<link rel="preload" href="fonts/fraunces-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="fonts/outfit-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<a class="skip" href="#carta">Saltar al contenido</a>
+
+<!-- PRELOADER -->
+<div class="loader" id="loader" aria-hidden="true">
+  <div class="loader__cup"><span class="loader__fill"></span></div>
+  <p>Preparando tu café…</p>
+</div>
+
+<!-- NAV -->
+<header class="nav" id="nav">
+  <a class="nav__brand" href="#inicio" aria-label="Kusiy, ir al inicio">
+    <img src="logo.svg" alt="" width="40" height="46"><span>Kusiy</span>
+  </a>
+  <button class="nav__toggle" id="navToggle" aria-expanded="false" aria-controls="menu" aria-label="Abrir menú"><span></span><span></span></button>
+  <nav class="nav__menu" id="menu" aria-label="Principal">
+    <a href="#historia">Por qué Kusiy</a>
+    <a href="#cafes">Cafés</a>
+    <a href="#carta">Carta</a>
+    <a href="#club">Kusiy Club</a>
+    <a href="#oficinas">Oficinas</a>
+    <a href="#visita">Visítanos</a>
+    <a class="btn btn--sm" href="#cafes">Pide aquí</a>
+  </nav>
+</header>
+
+<main id="inicio">
+  <!-- HERO -->
+  <section class="hero" aria-labelledby="h1">
+    <canvas class="hero__beans" id="beans" aria-hidden="true"></canvas>
+    <div class="hero__inner">
+      <p class="eyebrow">Café peruano de especialidad · Jesús María, Lima</p>
+      <h1 id="h1" class="hero__title" aria-label="Kusiy, la alegría de tomar café">
+        <span class="word" aria-hidden="true"><span>K</span><span>U</span><span>S</span><span>I</span><span>Y</span></span>
+      </h1>
+      <p class="hero__lead">«Kusiy» significa <strong>alegría</strong> en quechua. Granos de Villa Rica de 85+ puntos, snacks sin octógonos y un rincón con enchufes en cada mesa. <strong>Tu pedido en menos de 3 minutos.</strong></p>
+      <div class="hero__cta">
+        <a class="btn" href="#cafes">Pide y recoge sin cola</a>
+        <a class="btn btn--ghost" href="#carta">Ver la carta</a>
+      </div>
+    </div>
+    <div class="hero__cup" aria-hidden="true">
+      <svg viewBox="0 0 300 360" class="cup">
+        <path class="steam s1" d="M105 70 C 80 40, 130 30, 105 0" />
+        <path class="steam s2" d="M150 80 C 125 45, 175 35, 150 0" />
+        <path class="steam s3" d="M195 70 C 170 40, 220 30, 195 0" />
+        <path d="M60 110 H240 L220 300 Q218 330 188 330 H112 Q82 330 80 300 Z" fill="#F4E8D4"/>
+        <path d="M70 160 H230 L220 300 Q218 330 188 330 H112 Q82 330 80 300 Z" fill="#D9552B"/>
+        <ellipse cx="150" cy="110" rx="90" ry="18" fill="#2B1810"/>
+        <ellipse cx="150" cy="110" rx="78" ry="12" fill="#6b3a1f"/>
+        <path d="M240 150 q60 10 40 70 q-10 30 -40 30" fill="none" stroke="#F4E8D4" stroke-width="14" stroke-linecap="round"/>
+        <g transform="translate(150 235)"><circle r="38" fill="#2B1810"/><path d="M-6 -30 C -20 -8, 14 10, 0 30" fill="none" stroke="#F4E8D4" stroke-width="5" stroke-linecap="round"/><path d="M-18 -4 Q 0 14 18 -6" fill="none" stroke="#E3A93B" stroke-width="4" stroke-linecap="round" transform="translate(0 6)"/></g>
+      </svg>
+    </div>
+    <p class="scroll-hint" aria-hidden="true">Desliza <span></span></p>
+  </section>
+
+  <!-- MARQUEE -->
+  <div class="marquee" aria-hidden="true">
+    <div class="marquee__track">
+      <span>Café 85+ SCA</span><i>✺</i><span>Sin octógonos</span><i>✺</i><span>Wi-Fi 1 Gbps</span><i>✺</i><span>Enchufes en cada mesa</span><i>✺</i><span>Villa Rica · Cajamarca</span><i>✺</i><span>Listo en &lt; 3 min</span><i>✺</i>
+      <span>Café 85+ SCA</span><i>✺</i><span>Sin octógonos</span><i>✺</i><span>Wi-Fi 1 Gbps</span><i>✺</i><span>Enchufes en cada mesa</span><i>✺</i><span>Villa Rica · Cajamarca</span><i>✺</i><span>Listo en &lt; 3 min</span><i>✺</i>
+    </div>
+  </div>
+
+  <!-- CÓMO PEDIR -->
+  <section class="how" id="como" aria-labelledby="h-how">
+    <div class="wrap">
+      <p class="eyebrow">Pide sin hacer cola</p>
+      <h2 id="h-how" class="reveal">Tu café, listo cuando llegas</h2>
+      <ol class="how__steps">
+        <li class="reveal"><b aria-hidden="true">1</b><h3>Elige</h3><p>Desliza los cafés o abre la carta y toca «Agregar».</p></li>
+        <li class="reveal"><b aria-hidden="true">2</b><h3>Envía tu pedido</h3><p>Se abre WhatsApp con tu pedido ya escrito. Solo lo mandas.</p></li>
+        <li class="reveal"><b aria-hidden="true">3</b><h3>Recoge y paga</h3><p>Lo retiras en la barra en menos de 3 minutos. Pagas en el local con Yape, Plin o tarjeta.</p></li>
+      </ol>
+      <p class="fine">Atendemos en el local (Av. Garibaldi, cdra. 5, Jesús María) y para llevar al paso. Por ahora no hacemos delivery.</p>
+    </div>
+  </section>
+
+  <!-- VITRINA DE CAFÉS (3D + swipe) -->
+  <section class="showcase" id="cafes" aria-labelledby="h-show">
+    <div class="wrap">
+      <p class="eyebrow eyebrow--light">Nuestros cafés</p>
+      <h2 id="h-show">Gira, desliza, elige</h2>
+      <p class="lead lead--light">Desliza con el dedo (o usa las flechas) para ver el siguiente café. Cada uno gira para que lo veas por todos lados.</p>
+    </div>
+    <div class="wrap show" id="show">
+      <div class="show__stage" id="showStage" tabindex="0" role="group" aria-roledescription="carrusel" aria-label="Cafés de Kusiy. Desliza o usa las flechas izquierda y derecha para cambiar de café.">
+        <canvas id="showCanvas" aria-hidden="true"></canvas>
+        <div class="show__fallback" id="showFallback" hidden aria-hidden="true"></div>
+        <button class="show__nav show__nav--prev" id="showPrev" type="button" aria-label="Café anterior">‹</button>
+        <button class="show__nav show__nav--next" id="showNext" type="button" aria-label="Café siguiente">›</button>
+        <p class="show__hint" aria-hidden="true">← desliza →</p>
+      </div>
+      <div class="show__info" aria-live="polite">
+        <span class="badge" id="showTag" hidden></span>
+        <h3 id="showName"></h3>
+        <p id="showDesc"></p>
+        <ul class="chips" id="showChips" aria-label="Ingredientes"></ul>
+        <label class="oat" id="showOatWrap"><input type="checkbox" id="showOat"> Con leche de avena (+S/ 2.00)</label>
+        <div class="show__buy"><span class="price" id="showPrice"></span><button class="btn" id="showAdd" type="button">Agregar al pedido</button></div>
+        <p class="fine fine--light" id="showCount"></p>
+      </div>
+      <div class="show__dots" id="showDots" role="group" aria-label="Elegir café"></div>
+    </div>
+  </section>
+
+  <!-- HISTORIA: 3 dolores -->
+  <section class="story" id="historia" aria-labelledby="h-story">
+    <div class="wrap">
+      <p class="eyebrow">Por qué existimos</p>
+      <h2 id="h-story" class="reveal">Tres dolores que le quitamos a tu día</h2>
+      <p class="lead reveal">Lo escuchamos en la calle: encuestamos a 50 estudiantes y profesionales del eje Garibaldi–Salaverry. Esto fue lo que más se repitió.</p>
+    </div>
+    <div class="pains wrap">
+      <article class="pain reveal tilt">
+        <span class="pain__n" data-count="84" data-suffix="%">0%</span>
+        <h3>El café diario no puede costar una fortuna</h3>
+        <p>Entre S/ 22 de una franquicia y un café aguado de máquina, no había punto medio. Nosotros: grano de Villa Rica y combos <strong>desde S/ 14.50</strong>.</p>
+      </article>
+      <article class="pain reveal tilt">
+        <span class="pain__n" data-count="76" data-suffix="%">0%</span>
+        <h3>Sin colas, sin batería baja</h3>
+        <p>Pre-pedido por QR listo en menos de 3 minutos, enchufes dobles + USB-C en cada mesa y fibra de 1 Gbps.</p>
+      </article>
+      <article class="pain reveal tilt">
+        <span class="pain__n" data-count="80" data-suffix="%">0%</span>
+        <h3>Snacks que no te dan sueño</h3>
+        <p>Masa madre, wraps proteicos y postres endulzados de forma natural. Cero octógonos en la vitrina.</p>
+      </article>
+    </div>
+    <p class="wrap fine">Fuente: encuesta presencial propia, n = 50 (32 estudiantes UP/UPC y 18 profesionales). Plan de Negocios Kusiy, nov. 2026.</p>
+  </section>
+
+  <!-- CARTA -->
+  <section class="menu" id="carta" aria-labelledby="h-menu">
+    <div class="wrap">
+      <p class="eyebrow eyebrow--light">La carta</p>
+      <h2 id="h-menu" class="reveal">Hecho al momento, a precio justo</h2>
+      <p class="lead lead--light reveal">Precios en soles, IGV incluido. Leche de avena +S/ 2.00. Pregunta por el snack del día.</p>
+      <div class="tabs" role="tablist" aria-label="Categorías de la carta" id="tabs"></div>
+      <div class="menu__grid" id="menuGrid" role="tabpanel" aria-live="polite"></div>
+    </div>
+  </section>
+
+  <!-- VALERIA 3D -->
+  <section class="persona" id="valeria" aria-labelledby="h-persona">
+    <div class="wrap persona__grid">
+      <div class="persona__copy">
+        <p class="eyebrow">Nuestro cliente ideal</p>
+        <h2 id="h-persona" class="reveal">Conoce a Valeria, 22 años</h2>
+        <p class="lead reveal">Estudiante de 8.° ciclo de Ingeniería Empresarial en la UP y practicante en San Isidro. Entre las 2:45 y las 4:00 p.m. necesita un refugio productivo. Arrástrala para girarla y toca los puntos.</p>
+        <div class="card-info reveal" id="hotInfo" aria-live="polite">
+          <h3>Su “hora hueco”</h3>
+          <p>Trabaja de 8:30 a 2:30 p.m. y tiene clases de 4:00 a 8:30 p.m. Esa pausa de 75 minutos es nuestra oportunidad.</p>
+        </div>
+        <ul class="chips reveal" aria-label="Datos de Valeria">
+          <li>NSE A/B</li><li>Paga con Yape / Apple Pay</li><li>Lee reseñas en Google Maps</li><li>Lo-fi y luz cálida</li>
+        </ul>
+      </div>
+      <div class="persona__stage" id="stage">
+        <canvas id="valeria3d" aria-label="Valeria en 3D: personaje animado con laptop y café helado. Se puede girar arrastrando." role="img"></canvas>
+        <div class="hotspots" id="hotspots"></div>
+        <p class="stage__fallback" id="stageFallback" hidden>Tu navegador no soporta 3D (WebGL). Valeria: 22 años, estudiante UP, adora el Iced Vanilla Latte con leche de avena.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- NÚMEROS -->
+  <section class="numbers" aria-labelledby="h-num">
+    <div class="wrap">
+      <h2 id="h-num" class="sr-only">Metas de Kusiy 2027</h2>
+      <div class="numbers__grid">
+        <div><b data-count="3" data-prefix="&lt; ">0</b><span>minutos por pedido</span></div>
+        <div><b data-count="85" data-suffix="+">0</b><span>puntos SCA en taza</span></div>
+        <div><b data-count="1000" data-suffix=" Mbps">0</b><span>fibra simétrica</span></div>
+        <div><b data-count="0">0</b><span>octógonos en vitrina</span></div>
+      </div>
+      <p class="fine fine--light">Estándares de servicio de Kusiy según el Plan de Negocios. Las cifras de ventas 2027 son metas, no resultados.</p>
+    </div>
+  </section>
+
+  <!-- CLUB -->
+  <section class="club" id="club" aria-labelledby="h-club">
+    <div class="wrap club__grid">
+      <div>
+        <p class="eyebrow">Fidelidad digital</p>
+        <h2 id="h-club" class="reveal">Kusiy Club: el 7.° café va por la casa</h2>
+        <p class="lead reveal">Cada compra suma un sello digital en tu celular (QR, sin tarjetas de cartón). Convenios con carné o fotocheck: <strong>15% de descuento</strong>.</p>
+        <ul class="perks reveal">
+          <li>Termo o tote Kusiy → S/ 1.50 menos en tu recarga</li>
+          <li>Cata de Villa Rica + música acústica, último viernes de cada mes, 6:00 p.m.</li>
+          <li>Reseña en Google Maps → mini-brownie de quinua</li>
+        </ul>
+      </div>
+      <div class="stamps reveal" id="stamps" role="group" aria-label="Tarjeta de sellos: toca para sumar">
+        <p class="stamps__t">Toca un sello</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- OFICINAS / B2B -->
+  <section class="b2b" id="oficinas" aria-labelledby="h-b2b">
+    <div class="wrap b2b__grid">
+      <div>
+        <p class="eyebrow">Para oficinas, clínicas y universidades</p>
+        <h2 id="h-b2b" class="reveal">Coffee Break saludable para tu equipo</h2>
+        <p class="lead reveal">Café peruano y snacks sin octógonos para reuniones y turnos. Cuéntanos cuántas personas son y para qué fecha, y te enviamos una cotización. También tenemos convenio con carné o fotocheck (15% de descuento).</p>
+      </div>
+      <p class="reveal"><a class="btn" id="b2bBtn" href="#visita" target="_blank" rel="noopener">Cotizar por WhatsApp</a></p>
+    </div>
+  </section>
+
+  <!-- EQUIPO -->
+  <section class="team" id="equipo" aria-labelledby="h-team">
+    <div class="wrap">
+      <p class="eyebrow">Los 4 fundadores</p>
+      <h2 id="h-team" class="reveal">Un equipo, cuatro gerencias</h2>
+      <div class="team__grid">
+        <article class="member reveal tilt"><span class="avatar" aria-hidden="true">CR</span><h3>Christofer Rivera</h3><p class="role">Gerente General y de Operaciones</p><p>Lidera la cancha: que cada café salga en menos de 3 minutos y el equipo trabaje feliz.</p></article>
+        <article class="member reveal tilt"><span class="avatar" aria-hidden="true">RC</span><h3>Raúl Chorres</h3><p class="role">Gerente de Finanzas</p><p>Cuida el capital de S/ 48,000, el costo por receta y los presupuestos sinceros.</p></article>
+        <article class="member reveal tilt"><span class="avatar" aria-hidden="true">IE</span><h3>Ila Espinal</h3><p class="role">Gerente de Logística y Suministro</p><p>Elige las fincas de Villa Rica, cuida la cadena de frío y evita mermas.</p></article>
+        <article class="member reveal tilt"><span class="avatar" aria-hidden="true">SF</span><h3>Sebastián Fuentes</h3><p class="role">Gerente de Marketing y Comercial</p><p>Investiga al cliente en la calle y cierra alianzas con universidades y clínicas.</p></article>
+      </div>
+    </div>
+  </section>
+
+  <!-- VISITA -->
+  <section class="visit" id="visita" aria-labelledby="h-visit">
+    <div class="wrap visit__grid">
+      <div>
+        <h2 id="h-visit" class="reveal">Te esperamos a dos cuadras de clase</h2>
+        <address class="reveal">Av. Giuseppe Garibaldi (ex Gregorio Escobedo), cdra. 5<br>Jesús María, Lima<br><small>A 180 m de la Universidad del Pacífico y 250 m de UPC San Isidro.</small></address>
+        <p class="reveal"><a class="btn" href="#carta">Prepara tu pedido</a></p>
+      </div>
+      <figure class="reveal map" aria-label="Croquis de la zona">
+        <svg viewBox="0 0 400 300" role="img" aria-labelledby="mt"><title id="mt">Croquis: Kusiy al centro, Universidad del Pacífico a 180 m, Starbucks a 320 m, Tambo a 150 m.</title>
+          <rect width="400" height="300" rx="18" fill="#EADBC0"/>
+          <g stroke="#cdb892" stroke-width="10" stroke-linecap="round"><line x1="0" y1="150" x2="400" y2="150"/><line x1="200" y1="0" x2="200" y2="300"/><line x1="60" y1="0" x2="340" y2="300"/></g>
+          <circle class="pulse" cx="200" cy="150" r="14" fill="#D9552B"/><circle cx="200" cy="150" r="6" fill="#F4E8D4"/>
+          <text x="214" y="136" font-size="14" font-weight="700" fill="#2B1810">Kusiy</text>
+          <circle cx="330" cy="150" r="8" fill="#3F6B4A"/><text x="290" y="132" font-size="12" fill="#2B1810">Univ. del Pacífico · 180 m</text>
+          <circle cx="200" cy="50" r="8" fill="#6b3a1f"/><text x="214" y="46" font-size="12" fill="#2B1810">Starbucks · 320 m</text>
+          <circle cx="110" cy="225" r="8" fill="#6b3a1f"/><text x="124" y="229" font-size="12" fill="#2B1810">Tambo+ · 150 m</text>
+        </svg>
+        <figcaption>Croquis referencial, no a escala.</figcaption>
+      </figure>
+    </div>
+  </section>
+</main>
+
+<footer class="footer">
+  <img src="logo.svg" alt="Kusiy Café &amp; Snacks" width="90" height="104">
+  <p>Kusiy Café &amp; Snacks S.A.C. · Lima, Perú · @KusiyCafe.pe</p>
+  <p class="fine fine--light">Proyecto académico — Proyecto Empresarial 2026-II. Carta y precios son una propuesta del equipo.</p>
+</footer>
+
+<!-- BARRA + HOJA DE PEDIDO -->
+<div class="cartbar" id="cartBar" hidden>
+  <button class="btn" id="cartOpen" type="button"><span id="cartCount"></span> · <span id="cartTotal"></span> — Ver mi pedido</button>
+</div>
+<p class="toast" id="toast" role="status" aria-live="polite"></p>
+<dialog class="sheet" id="sheet" aria-labelledby="sheetT">
+  <div class="sheet__panel">
+    <div class="sheet__head"><h2 id="sheetT">Tu pedido</h2><button id="sheetClose" type="button" aria-label="Cerrar pedido">✕</button></div>
+    <ul class="cart__list" id="cartList"></ul>
+    <p class="sheet__total">Total <b id="sheetTotal"></b></p>
+    <div class="sheet__form">
+      <label>Tu nombre <input id="custName" autocomplete="given-name" maxlength="30" placeholder="Para llamarte cuando esté listo"></label>
+      <label>Paso a recogerlo en
+        <select id="pickup"><option value="5">5 minutos</option><option value="10" selected>10 minutos</option><option value="15">15 minutos</option><option value="20">20 minutos</option><option value="30">30 minutos</option><option value="45">45 minutos</option></select>
+      </label>
+      <label>Nota <input id="note" maxlength="80" placeholder="Opcional: sin hielo, poca azúcar…"></label>
+    </div>
+    <p class="fine">Recojo en el local (Av. Garibaldi, cdra. 5). Pagas al recoger con Yape, Plin o tarjeta. Sin delivery por ahora. Tu pedido queda confirmado cuando Kusiy responda por WhatsApp.</p>
+    <div class="sheet__actions">
+      <button class="btn" id="sendWa" type="button">Enviar pedido por WhatsApp</button>
+      <button class="btn btn--line" id="copyOrder" type="button">Copiar pedido</button>
+      <button class="link" id="clearCart" type="button">Vaciar pedido</button>
+    </div>
+    <p class="sheet__msg" id="sheetMsg" role="status"></p>
+  </div>
+</dialog>
+
+<script>setTimeout(function(){var l=document.getElementById('loader');if(l)l.classList.add('done')},5000)</script>
+<script src="app.js" defer></script>
+</body>
+</html>

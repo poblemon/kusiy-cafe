@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 600" role="img" aria-labelledby="t d">
+  <title id="t">Logo de Kusiy Café &amp; Snacks</title>
+  <desc id="d">Un grano de café sonriente rodeado por los rayos de un sol andino, sobre un círculo marrón espresso, con el nombre Kusiy debajo.</desc>
+  <!-- Kusiy = "alegría" en quechua: grano de café que sonríe + sol (Inti) -->
+  <circle cx="260" cy="260" r="240" fill="#2B1810"/>
+  <circle cx="260" cy="260" r="222" fill="none" stroke="#E3A93B" stroke-width="3" stroke-dasharray="2 12" stroke-linecap="round"/>
+  <g stroke="#E3A93B" stroke-width="12" stroke-linecap="round">
+    <line x1="260" y1="46" x2="260" y2="82"/>
+    <line x1="260" y1="438" x2="260" y2="474"/>
+    <line x1="46" y1="260" x2="82" y2="260"/>
+    <line x1="438" y1="260" x2="474" y2="260"/>
+    <line x1="109" y1="109" x2="134" y2="134"/>
+    <line x1="386" y1="386" x2="411" y2="411"/>
+    <line x1="411" y1="109" x2="386" y2="134"/>
+    <line x1="134" y1="386" x2="109" y2="411"/>
+  </g>
+  <!-- grano -->
+  <g transform="rotate(-18 260 260)">
+    <ellipse cx="260" cy="260" rx="112" ry="140" fill="#F4E8D4"/>
+    <path d="M260 124 C 214 190, 306 330, 260 396" fill="none" stroke="#2B1810" stroke-width="14" stroke-linecap="round"/>
+  </g>
+  <!-- ojos y sonrisa -->
+  <circle cx="221" cy="238" r="10" fill="#2B1810"/>
+  <circle cx="297" cy="222" r="10" fill="#2B1810"/>
+  <path d="M214 292 Q 262 334 312 284" fill="none" stroke="#D9552B" stroke-width="14" stroke-linecap="round"/>
+  <!-- palabra -->
+  <text x="260" y="548" text-anchor="middle" font-family="Fraunces, Georgia, serif" font-weight="800" font-size="76" letter-spacing="6" fill="#2B1810">KUSIY</text>
+  <text x="260" y="584" text-anchor="middle" font-family="Outfit, Arial, sans-serif" font-weight="600" font-size="20" letter-spacing="9" fill="#D9552B">CAFÉ &amp; SNACKS</text>
+</svg>
